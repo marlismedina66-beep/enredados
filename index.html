@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Enredados Wiki — Aplicación web que muestra una ficha y una galeria de personajes de la película Enredados (Disney). Proyecto educativo sin fines de lucro." />
+  <meta name="author" content="Proyecto Enredados Wiki" />
+  <title>Enredados Wiki — Aplicación academica</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="estilos.css?v=20261117" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="app-container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="navbar-brand-icon">
+          <svg viewBox="0 0 48 48" width="34" height="34">
+            <rect x="4" y="4" width="40" height="40" rx="12" fill="none" stroke="#f5a623" stroke-width="3"/>
+            <path d="M12 34 L17 17 L23 26 L27 12 L33 26 L38 17 L44 34 Z" fill="#f5a623"/>
+            <path d="M22 15 L24 19 L26 15" fill="#2b2d50"/>
+            <circle cx="22" cy="27" r="2.5" fill="#fff"/>
+            <circle cx="28" cy="27" r="2.5" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="navbar-brand-text">Enredados Wiki</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <div class="navbar-nav gap-2">
+          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#personajes">Personajes</a>
+          <a class="nav-link" href="#galeria">Galería</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </div>
+        <a href="#contacto" class="btn btn-gold btn-sm">Iniciar sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="app-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Enredados Wiki · Proyecto Academico</p>
+        <h1 class="hero-title">Descubre la <span class="text-gold">película Enredados</span></h1>
+        <p class="hero-subtitle">
+          Una aplicación web educativa con la wiki de personajes de
+          <strong>Enredados</strong> (Disney). Consulta las fichas de cada personaje,
+          descubre sus poderes y vestimenta, y explora nuestra galeria de imágenes.
+        </p>
+        <div class="hero-actions">
+          <a href="#personajes" class="btn btn-lg btn-gold">
+            <i class="bi bi-images me-2"></i>Explorar personajes
+          </a>
+          <a href="#contacto" class="btn btn-lg btn-outline-gold">
+            <i class="bi bi-chat-dots me-2"></i>Contacto academicо
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="stat-value">9</span>
+            <span class="stat-label">Personajes</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">12</span>
+            <span class="stat-label">Imágenes</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Gratis</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <img class="hero-img" src="imagenes/hero_poster.jpg" alt="Póster oficial de Enredados (Disney)" />
+        <div class="hero-img-overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARACTERÍSTICAS ============ -->
+  <section class="features-section">
+    <div class="app-container">
+      <div class="section-header text-center">
+        <span class="section-tag">Características</span>
+        <h2 class="section-title">Lo que hace de <span class="text-gold">Enredados Wiki</span> una aplicación especial</h2>
+        <p class="section-subtitle">Diseñada pensando en estudiantes, docentes y aficionados a la animación del Disney.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-card-text"></i></div>
+          <h3 class="feature-title">Fichas completas</h3>
+          <p class="feature-desc">Consulta biografía, rol, aldea, poder y descripción de cada personaje de la película.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-shirt"></i></div>
+          <h3 class="feature-title">Ropa y accesorios</h3>
+          <p class="feature-desc">Descubre cómo lleva vestido cada personaje: cabello, camisa, pantalón y zapatos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-images"></i></div>
+          <h3 class="feature-title">Galería de imágenes</h3>
+          <p class="feature-desc">Explora una galeria con los personajes y el póster oficial de la película.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-pencil-square"></i></div>
+          <h3 class="feature-title">Registro de personajes</h3>
+          <p class="feature-desc">Añade nuevos personajes con su ficha, descripción e imagen. Comparte conocimiento.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-laptop"></i></div>
+          <h3 class="feature-title">Diseño responsivo</h3>
+          <p class="feature-desc">La aplicación se adapta a tu dispositivo, desde el ordenador hasta el teléfono.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+          <h3 class="feature-title">Acceso seguro</h3>
+          <p class="feature-desc">Registra y accede con tu usuario para guardar tus aportes de forma segura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PERSONAJES ============ -->
+  <section class="personajes-section" id="personajes">
+    <div class="app-container">
+      <div class="section-header text-center">
+        <span class="section-tag">Personajes</span>
+        <h2 class="section-title">Personajes principales</h2>
+        <p class="section-subtitle">Fichas con imagen, rol y descripción de cada personaje de la película.</p>
+      </div>
+      <div class="personajes-grid" id="gridPersonajes">
+        <div class="personaje-card placeholder-card">
+          <div class="personaje-placeholder">
+            <i class="bi bi-image"></i>
+            <span>Cargando personajes...</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-gold btn-sm" id="btnCargarMas">+ Cargar más personajes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="galeria-section" id="galeria">
+    <div class="app-container">
+      <div class="section-header text-center">
+        <span class="section-tag">Galería</span>
+        <h2 class="section-title">Galería de <span class="text-gold">imágenes</span></h2>
+        <p class="section-subtitle">Una selección de imágenes de los personajes y el mundo de Enredados.</p>
+      </div>
+      <div class="galeria-grid">
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/rapunzel.jpg" alt="Rapunzel" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">Rapunzel</div>
+          </div>
+        </figure>
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/flynn.jpg" alt="Flynn Rider" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">Flynn Rider</div>
+          </div>
+        </figure>
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/gothel.jpg" alt="Madre Gothel" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">Madre Gothel</div>
+          </div>
+        </figure>
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/maximus.jpg" alt="Maximus" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">Maximus</div>
+          </div>
+        </figure>
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/pascal.jpg" alt="Pascal" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">Pascal</div>
+          </div>
+        </figure>
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/lady_tremaine.jpg" alt="Lady Tremaine" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">Lady Tremaine</div>
+          </div>
+        </figure>
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/king_frederic.jpg" alt="Rey Frederic" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">Rey Frederic</div>
+          </div>
+        </figure>
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/patito.jpg" alt="El Patito Modosito" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">El Patito Modosito</div>
+          </div>
+        </figure>
+        <figure class="galeria-item">
+          <img src="imagenes/galeria/stabbington.jpg" alt="Los Hermanos Stabbington" loading="lazy" />
+          <div class="galeria-overlay">
+            <div class="galeria-caption">Los Hermanos Stabbington</div>
+          </div>
+        </figure>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#contacto" class="btn btn-outline-gold btn-sm">+ Añadir imagen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE EL PROYECTO ============ -->
+  <section class="about-section">
+    <div class="app-container">
+      <div class="about-columns">
+        <div class="about-text">
+          <span class="section-tag">Sobre el proyecto</span>
+          <h2 class="section-title">Una aplicación <span class="text-gold">educativa</span> para estudiantes</h2>
+          <p class="about-desc">
+            Enredados Wiki es una aplicación web educativa creada con fines académicos.
+            Muestra información sobre los personajes de la película Enredados (Disney),
+            su vestimenta, habilidades y el mundo de la historia. Es un proyecto sin fines
+            de lucro y todos los derechos de las imágenes corresponden a Disney.
+          </p>
+          <div class="about-tags">
+            <span class="badge bg-gold bg-opacity-10 text-gold border-gold">Disney</span>
+            <span class="badge bg-gold bg-opacity-10 text-gold border-gold">Animación</span>
+            <span class="badge bg-gold bg-opacity-10 text-gold border-gold">Educación</span>
+            <span class="badge bg-gold bg-opacity-10 text-gold border-gold">Web</span>
+          </div>
+        </div>
+        <div class="about-img-wrap">
+          <img src="imagenes/hero_poster.jpg" alt="Ilustración del mundo de Enredados" class="about-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO / AUTENTICACIÓN ============ -->
+  <section class="contact-section" id="contacto">
+    <div class="app-container">
+      <div class="section-header text-center">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">Iniciar sesión o <span class="text-gold">registrarse</span></h2>
+        <p class="section-subtitle">Accede para guardar tus aportes y gestionar tu cuenta.</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-tabs">
+          <button class="contact-tab contact-tab-active" data-panel="loginPanel">Iniciar sesión</button>
+          <button class="contact-tab" data-panel="registerPanel">Registrarse</button>
+        </div>
+        <div class="contact-panel active" id="loginPanel">
+          <form id="loginForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="loginEmail">Correo electrónico</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="tu@email.com" required autocomplete="username" />
+              <div class="invalid-feedback">Ingresa un correo válido.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="loginPassword">Contraseña</label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Tu contraseña" required autocomplete="current-password" />
+              <div class="invalid-feedback">Ingresa tu contraseña.</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+            <p class="text-danger mt-2 mb-0" id="loginError"></p>
+          </form>
+        </div>
+        <div class="contact-panel" id="registerPanel">
+          <form id="registerForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label" for="regName">Nombre</label>
+              <input type="text" class="form-control" id="regName" placeholder="Tu nombre" required autocomplete="name" />
+              <div class="invalid-feedback">Ingresa tu nombre.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="regEmail">Correo electrónico</label>
+              <input type="email" class="form-control" id="regEmail" placeholder="tu@email.com" required autocomplete="username" />
+              <div class="invalid-feedback">Ingresa un correo válido.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="regPassword">Contraseña</label>
+              <input type="password" class="form-control" id="regPassword" placeholder="Mínimo 6 caracteres" required autocomplete="new-password" />
+              <div class="invalid-feedback">La contraseña es obligatoria.</div>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Crear cuenta</button>
+            <p class="text-danger mt-2 mb-0" id="registerError"></p>
+          </form>
+        </div>
+        <p class="contact-note">
+          Al registrarte aceptas las condiciones de uso. <a href="#" class="text-gold">Ver política de privacidad</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="app-footer">
+    <div class="app-container footer-content">
+      <div class="footer-brand">
+        <span class="footer-brand-icon">
+          <svg viewBox="0 0 48 48" width="32" height="32">
+            <rect x="4" y="4" width="40" height="40" rx="12" fill="#2b2d50"/>
+            <path d="M12 34 L17 17 L23 26 L27 12 L33 26 L38 17 L44 34 Z" fill="#f5a623"/>
+            <path d="M22 15 L24 19 L26 15" fill="#2b2d50"/>
+            <circle cx="22" cy="27" r="2.5" fill="#fff"/>
+            <circle cx="28" cy="27" r="2.5" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="footer-brand-name">Enredados Wiki</span>
+      </div>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#personajes">Personajes</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="footer-copy">
+        © 2010 The Walt Disney Company. Todos los derechos reservados.<br />
+        Enredados Wiki — aplicación <strong>educativa sin fines de lucro</strong>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js?v=20261117"></script>
+</body>
+</html>
